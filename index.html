@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            background: #00b3ff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background: #00b3a1;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #fff;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            background: #007b8f;
+            transition: background 0.3s ease;
+        }
+        section {
+            margin: 20px 0;
+        }
+        h2 {
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        h2:hover {
+            transform: scale(1.02);
+            background: #e0f7ff;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        .contact, .skills, .experience {
+            margin-bottom: 20px;
+        }
+        .skills ul, .experience ul {
+            margin-left: 20px;
+        }
+        .photo {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .photo img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .column {
+            flex: 1;
+            min-width: 200px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin: 10px 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        footer img {
+            width: 24px;
+            height: 24px;
+        }
+        .contact-icons {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .contact-icons img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+      <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Diki Satria",
+            "address": "JL. Raya Merak, KP Benda Kebon, RT 001 RW 005, DS. Benda, Kec. Sukamulya, Kab. Tangerang",
+            "email": "dikisatria54207@gmail.com",
+            "telephone": "083891789162",
+            "alumniOf": [
+                {"@type": "EducationalOrganization", "name": "SDN Benda 2"},
+                {"@type": "EducationalOrganization", "name": "SMPN 2 Sukamulya"},
+                {"@type": "EducationalOrganization", "name": "SMAN 30 Kabupaten Tangerang"}
+            ],
+            "knowsAbout": [
+                "Microsoft Word",
+                "Microsoft PowerPoint",
+                "Pemahaman tentang proses aliran kerja"
+            ],
+            "worksFor": {
+                "@type": "Organization",
+                "name": "PT. Yifang CME",
+                "jobTitle": "Operator Gudang"
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Diki Satria</h1>
+        <p>JL. Raya Merak, KP Benda Kebon RT 001 RW 005 DS. Benda Kec Sukamulya KAB. Tangerang</p>
+    </header>
+    <nav>
+        <a href="#kontak">Kontak</a>
+        <a href="#pendidikan">Pendidikan</a>
+        <a href="#keterampilan">Keterampilan</a>
+        <a href="#pengalaman">Pengalaman</a>
+    </nav>
+    <div class="container">
+        <div class="photo">
+            <img src="img/image.png" alt="Foto Anda">
+        </div>
+        <section id="kontak" class="contact">
+            <div class="card">
+                <h2>Informasi Kontak</h2>
+                <div class="contact-icons">
+                    <img src="img/email.jpg" alt="Email"> dikisatria54207@gmail.com
+                </div>
+                <div class="contact-icons">
+                    <img src="img/tl.jpg" alt="Telepon"> 083891789162
+                </div>
+            </div>
+        </section>
+
+        <section id="pendidikan" class="education">
+            <div class="card">
+                <h2>Riwayat Pendidikan</h2>
+                <div class="columns">
+                    <div class="column">
+                        <ul>
+                            <li><strong>SDN Benda 2 :</strong> 2011-2017</li>
+                            <li><strong>SMPN 2 Sukamulya :</strong> 2017-2020</li>
+                            <li><strong>SMAN 30 Kabupaten Tangerang :</strong> 2020-2023</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="keterampilan" class="skills">
+            <div class="card">
+                <h2>Keterampilan</h2>
+                <div class="columns">
+                    <div class="column">
+                        <ul>
+                            <li>Microsoft Word</li>
+                            <li>Microsoft PowerPoint</li>
+                            <li>Pemahaman yang kuat tentang proses aliran kerja</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pengalaman" class="experience">
+            <div class="card">
+                <h2>Pengalaman Kerja</h2>
+                <ul>
+                    <li>
+                        <strong>PT. Yifang CME</strong> - Operator Gudang
+                        <p>Bertanggung jawab untuk pengelolaan stok barang, pelaporan inventaris, dan memastikan pengiriman barang berjalan lancar.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Diki Satria. All rights reserved.</p>
+    </footer>
+</body>
+</html>
